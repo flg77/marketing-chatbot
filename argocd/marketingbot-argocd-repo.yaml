@@ -1,0 +1,10 @@
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: marketingbot-repo
+  namespace: janus-argocd
+  labels:
+    argocd.argoproj.io/secret-type: repository
+stringData:
+  url: https://gitlab-gitlab.apps.cluster-swr8d.swr8d.sandbox945.opentlc.com/development/marketingbot-gitops.git
